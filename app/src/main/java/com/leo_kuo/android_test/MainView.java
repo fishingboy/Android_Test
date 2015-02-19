@@ -5,6 +5,7 @@ import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.Toast;
 
 
@@ -39,11 +40,13 @@ public class MainView extends ActionBarActivity {
         return super.onOptionsItemSelected(item);
     }
 
-//    public void showLinear()
-//    {
-//        Intent intent = new Intent();
-//        intent.setClass(this, LinearView.class);
-//        startActivity(intent);
-//        Toast.makeText(MainView.this, "這是一個Toast......", Toast.LENGTH_LONG).show();
-//    }
+    /**
+         * 顯示 Linear 測試畫面
+         */
+    public void showLinear(View view)
+    {
+        Intent intent = new Intent();
+        intent.setClass(this, LinearView.class);
+        startActivity(intent);
+    }
 }
