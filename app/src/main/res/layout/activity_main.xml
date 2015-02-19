@@ -12,6 +12,14 @@
     <Button
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
+        android:text="Toast測試"
+        android:id="@+id/btn_toast_show"
+        android:onClick="showToast"
+        android:layout_gravity="center_horizontal" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
         android:text="Linear Layout 測試(垂直)"
         android:id="@+id/btn_linear_start"
         android:onClick="showLinear"/>
