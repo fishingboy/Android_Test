@@ -6,11 +6,12 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.EditText;
 import android.widget.Toast;
 
 
-public class MainView extends ActionBarActivity {
-
+public class MainView extends ActionBarActivity
+{
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -40,17 +41,28 @@ public class MainView extends ActionBarActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    /**
-         * 顯示 Toast (類似 alert)
-         */
+    // 顯示 Toast (類似 alert)
     public void showToast(View view)
     {
-        Toast.makeText(view.getContext(), "這是一個Toast......", Toast.LENGTH_LONG).show();
+        String str = this.getTxt();
+        if (str.length()> 0)
+        {
+            Toast.makeText(view.getContext(), str, Toast.LENGTH_LONG).show();
+        }
+        else
+        {
+            Toast.makeText(view.getContext(), "您沒有輸入資料！", Toast.LENGTH_LONG).show();
+        }
     }
 
-    /**
-         * 顯示 Linear 測試畫面
-         */
+    // 取得輸入方塊的值
+    public String getTxt()
+    {
+        EditText txt = (EditText) findViewById(R.id.txt1);
+        return txt.getText().toString();
+    }
+
+    // 顯示 Linear 測試畫面
     public void showLinear(View view)
     {
         Intent intent = new Intent();

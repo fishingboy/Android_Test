@@ -9,6 +9,12 @@
     android:id="@+id/activity_main1"
     android:scrollbars="horizontal">
 
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt1"
+        android:layout_gravity="center_horizontal" />
+
     <Button
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
