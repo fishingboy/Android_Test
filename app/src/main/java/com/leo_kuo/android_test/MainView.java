@@ -3,12 +3,10 @@ package com.leo_kuo.android_test;
 import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.EditText;
-import android.widget.Toast;
 
 
 public class MainView extends ActionBarActivity
@@ -65,7 +63,6 @@ public class MainView extends ActionBarActivity
     // 顯示 Linear 測試畫面
     public void showLinear(View view)
     {
-        Log.i("Leo", "Hello world Log!");
         Intent intent = new Intent();
         intent.setClass(this, LinearView.class);
         startActivity(intent);

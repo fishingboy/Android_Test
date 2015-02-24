@@ -1,11 +1,11 @@
 package com.leo_kuo.android_test;
 
 import android.view.View;
-import android.widget.EditText;
 import android.widget.Toast;
 
 /**
- * Created by Leo on 2015/2/24.
+ * 共用函式區
+ * @author Leo Kuo <et282523@hotmail.com>
  */
 public class Lib
 {
