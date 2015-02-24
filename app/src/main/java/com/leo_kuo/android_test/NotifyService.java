@@ -14,13 +14,14 @@ public class NotifyService extends Service
 
     public NotifyService()
     {
-        super.onCreate();
+//        super.onCreate();
         String ns = Context.NOTIFICATION_SERVICE;
         NotificationManager mNotificationManager = (NotificationManager) getSystemService(ns);
 
         CharSequence tickerText = "記得繳錢";
         long when = System.currentTimeMillis();
-        Notification notification = new Notification(R.drawable.ic_launcher, tickerText, when);
+//        Notification notification = new Notification(R.drawable.notify_icon, tickerText, when);
+        Notification notification = new Notification(0, tickerText, when);
         Context context = getApplicationContext();
         CharSequence contentTitle = "提醒標題";
         CharSequence contentText = "點擊進入繳費清單";

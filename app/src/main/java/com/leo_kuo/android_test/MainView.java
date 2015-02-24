@@ -1,5 +1,8 @@
 package com.leo_kuo.android_test;
 
+import android.app.Notification;
+import android.app.NotificationManager;
+import android.content.Context;
 import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
@@ -69,12 +72,22 @@ public class MainView extends ActionBarActivity
     }
 
     // 顯示狀態列提示
-    // TODO: 把這個功能修正，現在不 Work!!
     public void showNotify(View view)
     {
-        Lib.alert(view, "狀態列提示");
+        final int notifyID = 1; // 通知的識別號碼
+        final NotificationManager notificationManager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE); // 取得系統的通知服務
+        final Notification notification = new Notification.Builder(getApplicationContext()).setSmallIcon(R.drawable.notify_icon).setContentTitle("內容標題").setContentText("內容文字").build(); // 建立通知
+        notificationManager.notify(notifyID, notification); // 發送通知
+    }
+
+    // 顯示狀態列提示
+    // TODO: 把這個功能修正，現在不 Work!!
+    public void showNotifyByService(View view)
+    {
         Intent i = new Intent(this, NotifyService.class);
         i.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         startService(i);
     }
+
+
 }
