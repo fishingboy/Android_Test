@@ -67,4 +67,14 @@ public class MainView extends ActionBarActivity
         intent.setClass(this, LinearView.class);
         startActivity(intent);
     }
+
+    // 顯示狀態列提示
+    // TODO: 把這個功能修正，現在不 Work!!
+    public void showNotify(View view)
+    {
+        Lib.alert(view, "狀態列提示");
+        Intent i = new Intent(this, NotifyService.class);
+        i.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        startService(i);
+    }
 }

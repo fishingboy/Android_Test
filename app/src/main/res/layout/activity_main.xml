@@ -26,6 +26,14 @@
     <Button
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
+        android:text="狀態列提示"
+        android:id="@+id/btn_notify"
+        android:layout_gravity="center_horizontal"
+        android:onClick="showNotify"/>
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
         android:text="Linear Layout 測試(垂直)"
         android:id="@+id/btn_linear_start"
         android:onClick="showLinear"/>
