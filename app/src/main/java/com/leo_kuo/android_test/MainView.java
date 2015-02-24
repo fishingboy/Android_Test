@@ -50,13 +50,9 @@ public class MainView extends ActionBarActivity
     {
         String str = this.getTxt();
         if (str.length()> 0)
-        {
-            Toast.makeText(view.getContext(), str, Toast.LENGTH_LONG).show();
-        }
+            Lib.alert(view, str);
         else
-        {
-            Toast.makeText(view.getContext(), "您沒有輸入資料！", Toast.LENGTH_LONG).show();
-        }
+            Lib.alert(view, "您沒有輸入資料！");
     }
 
     // 取得輸入方塊的值
