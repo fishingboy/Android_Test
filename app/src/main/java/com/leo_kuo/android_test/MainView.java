@@ -4,6 +4,7 @@ import android.app.Notification;
 import android.app.NotificationManager;
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -105,4 +106,17 @@ public class MainView extends ActionBarActivity
         startActivity(intent);
     }
 
+    public void writeSharedPreferences(View view)
+    {
+        SharedPreferences data = getSharedPreferences("data", MODE_PRIVATE);
+        data.edit().putString("msg", "Hello Shared Preferences!").commit();
+        Lib.alert(view, "writeSharedPreferences Finish!");
+    }
+
+    public void readSharedPreferences(View view)
+    {
+        SharedPreferences data = getSharedPreferences("data", MODE_PRIVATE);
+        String msg = data.getString("msg", "no msg...");
+        Lib.alert(view, "msg = " + msg);
+    }
 }

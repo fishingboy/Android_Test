@@ -22,6 +22,13 @@
             android:inputType="text"
             android:hint="請輸入任意字串..."/>
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="提示測試"
+            android:id="@+id/textView3"/>
+
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -38,12 +45,51 @@
             android:layout_gravity="center_horizontal"
             android:onClick="showNotify"/>
 
+
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="SharedPreferences"
+                android:id="@+id/textView"/>
+
+            <TableRow>
+                <Button
+                    android:layout_height="wrap_content"
+                    android:text="測試寫入"
+                    android:id="@+id/button24"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="1"
+                    android:onClick="writeSharedPreferences"/>
+                <Button
+                    android:layout_height="wrap_content"
+                    android:text="測試讀取"
+                    android:id="@+id/button25"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="1"
+                    android:onClick="readSharedPreferences"/>
+            </TableRow>
+        </TableLayout>
+
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="測試寫入檔案"
             android:id="@+id/btn_file_test"
             android:layout_gravity="center_horizontal"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Layout 測試"
+            android:id="@+id/textView2"/>
 
         <Button
             android:layout_width="match_parent"
