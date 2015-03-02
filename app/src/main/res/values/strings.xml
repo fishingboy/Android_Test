@@ -7,5 +7,7 @@
     <string name="action_about">關於</string>
     <string name="title_activity_view2">view2</string>
     <string name="title_activity_scroll">捲軸測試</string>
+    <string name="title_activity_table">Table Layout 測試</string>
+    <string name="title_activity_relative">Relative Layout 測試</string>
 
 </resources>

@@ -4,7 +4,8 @@
 
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
-        android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
         android:paddingRight="@dimen/activity_horizontal_margin"
         android:paddingTop="@dimen/activity_vertical_margin"
         android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".BlankActivity"
@@ -47,23 +48,25 @@
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Linear Layout 測試(垂直)"
+            android:text="Linear Layout 測試"
             android:id="@+id/btn_linear_start"
             android:onClick="showLinear"/>
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Linear Layout 測試(水平)"
-            android:id="@+id/button"
-            android:layout_gravity="center_horizontal" />
+            android:text="Table Layout 測試"
+            android:id="@+id/btn_table"
+            android:layout_gravity="center_horizontal"
+            android:onClick="showTable" />
 
         <Button
             android:layout_width="match_parent"
-            android:layout_height="500dp"
-            android:text="超大按鈕(測捲軸用)"
-            android:id="@+id/button2"
-            android:layout_gravity="center_horizontal"/>
+            android:layout_height="wrap_content"
+            android:text="Relative Layout 測試"
+            android:id="@+id/btn_relative"
+            android:layout_gravity="center_horizontal"
+            android:onClick="showRelative" />
 
     </LinearLayout>
 

@@ -88,4 +88,21 @@ public class MainView extends ActionBarActivity
         i.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         startService(i);
     }
+
+    // 顯示 Table Layout 測試畫面
+    public void showTable(View view)
+    {
+        Intent intent = new Intent();
+        intent.setClass(this, TableActivity.class);
+        startActivity(intent);
+    }
+
+    // 顯示 Relative Layout 測試畫面
+    public void showRelative(View view)
+    {
+        Intent intent = new Intent();
+        intent.setClass(this, RelativeActivity.class);
+        startActivity(intent);
+    }
+
 }

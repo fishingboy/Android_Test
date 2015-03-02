@@ -32,6 +32,14 @@
             android:exported="true" >
         </service>
 
+        <activity
+            android:name=".TableActivity"
+            android:label="@string/title_activity_table" >
+        </activity>
+        <activity
+            android:name=".RelativeActivity"
+            android:label="@string/title_activity_relative" >
+        </activity>
     </application>
 
 </manifest>
