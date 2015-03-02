@@ -88,6 +88,4 @@ public class MainView extends ActionBarActivity
         i.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         startService(i);
     }
-
-
 }
