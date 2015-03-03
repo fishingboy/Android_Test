@@ -11,5 +11,17 @@
     <string name="title_activity_relative">Relative Layout 測試</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="title_activity_image">Image 測試</string>
+    <string name="title_activity_list">ListView 測試</string>
+    <string name="title_activity_list_view">ListView 測試</string>
+
+    <string-array name="weekday">
+        <item>星期一</item>
+        <item>星期二</item>
+        <item>星期三</item>
+        <item>星期四</item>
+        <item>星期五</item>
+        <item>星期六</item>
+        <item>星期日</item>
+    </string-array>
 
 </resources>

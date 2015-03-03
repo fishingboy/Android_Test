@@ -146,6 +146,14 @@
             android:layout_gravity="center_horizontal"
             android:onClick="showImage"/>
 
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ListView 測試"
+            android:id="@+id/button28"
+            android:layout_gravity="center_horizontal"
+            android:onClick="showListView"/>
+
     </LinearLayout>
 
 </ScrollView>
