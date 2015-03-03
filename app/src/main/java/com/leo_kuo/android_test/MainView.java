@@ -146,9 +146,9 @@ public class MainView extends ActionBarActivity
 
     public void showListView(View view)
     {
-        Lib.alert(view, "此功能尚未完成！");
-//        Intent intent = new Intent();
-//        intent.setClass(this, ListViewActivity.class);
-//        startActivity(intent);
+//        Lib.alert(view, "此功能尚未完成！");
+        Intent intent = new Intent();
+        intent.setClass(this, ListViewActivity.class);
+        startActivity(intent);
     }
 }

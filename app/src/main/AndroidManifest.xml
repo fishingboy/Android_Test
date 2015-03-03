@@ -45,10 +45,6 @@
             android:label="@string/title_activity_image" >
         </activity>
         <activity
-            android:name=".ListActivity"
-            android:label="@string/title_activity_list" >
-        </activity>
-        <activity
             android:name=".ListViewActivity"
             android:label="@string/title_activity_list_view" >
         </activity>
