@@ -24,4 +24,6 @@
         <item>星期日</item>
     </string-array>
 
+    <string name="title_activity_list_view_icon">ListView 圖示測試</string>
+
 </resources>

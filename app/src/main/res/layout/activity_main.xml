@@ -146,13 +146,27 @@
             android:layout_gravity="center_horizontal"
             android:onClick="showImage"/>
 
-        <Button
+        <TableRow
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="ListView 測試"
-            android:id="@+id/button28"
-            android:layout_gravity="center_horizontal"
-            android:onClick="showListView"/>
+            android:layout_gravity="center_horizontal">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ListView 測試"
+                android:id="@+id/button28"
+                android:onClick="showListView"
+                android:layout_weight="1" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ListView 測試(圖示)"
+                android:id="@+id/button29"
+                android:onClick="showListViewIcon"
+                android:layout_weight="1" />
+        </TableRow>
 
     </LinearLayout>
 
