@@ -7,6 +7,7 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -15,11 +16,20 @@ import android.widget.EditText;
 
 public class MainView extends ActionBarActivity
 {
+    SharedPreferences data;
+
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        // 記錄這是第幾次執行
+        data = getSharedPreferences("data", MODE_PRIVATE);
+        Integer count = data.getInt("run_count", 0);
+        count++;
+        data.edit().putInt("run_count", count).commit();
+        Log.i("LEO-LOG", "這是你第" + count + "次執行這個程式！");
     }
 
 
@@ -108,14 +118,12 @@ public class MainView extends ActionBarActivity
 
     public void writeSharedPreferences(View view)
     {
-        SharedPreferences data = getSharedPreferences("data", MODE_PRIVATE);
         data.edit().putString("msg", "Hello Shared Preferences!").commit();
         Lib.alert(view, "writeSharedPreferences Finish!");
     }
 
     public void readSharedPreferences(View view)
     {
-        SharedPreferences data = getSharedPreferences("data", MODE_PRIVATE);
         String msg = data.getString("msg", "no msg...");
         Lib.alert(view, "msg = " + msg);
     }
