@@ -12,7 +12,9 @@
         android:weightSum="1"
         android:orientation="vertical"
         android:id="@+id/activity_main1"
-        android:scrollbars="horizontal">
+        android:scrollbars="horizontal"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
 
         <EditText
             android:layout_width="match_parent"
@@ -77,6 +79,13 @@
             </TableRow>
         </TableLayout>
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="檔案"
+            android:id="@+id/textView5"/>
+
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -113,6 +122,29 @@
             android:id="@+id/btn_relative"
             android:layout_gravity="center_horizontal"
             android:onClick="showRelative" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fragment 測試"
+            android:id="@+id/button26"
+            android:layout_gravity="center_horizontal"
+            android:onClick="showFragment"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="元件測試"
+            android:id="@+id/textView4"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Image 測試"
+            android:id="@+id/button27"
+            android:layout_gravity="center_horizontal"
+            android:onClick="showImage"/>
 
     </LinearLayout>
 

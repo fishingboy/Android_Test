@@ -127,4 +127,20 @@ public class MainView extends ActionBarActivity
         String msg = data.getString("msg", "no msg...");
         Lib.alert(view, "msg = " + msg);
     }
+
+    // 顯示 Table Layout 測試畫面
+    public void showFragment(View view)
+    {
+        Lib.alert(view, "功能尚未完成。");
+//        Intent intent = new Intent();
+//        intent.setClass(this, BlankFragment.class);
+//        startActivity(intent);
+    }
+
+    public void showImage(View view)
+    {
+        Intent intent = new Intent();
+        intent.setClass(this, ImageActivity.class);
+        startActivity(intent);
+    }
 }

@@ -9,5 +9,7 @@
     <string name="title_activity_scroll">捲軸測試</string>
     <string name="title_activity_table">Table Layout 測試</string>
     <string name="title_activity_relative">Relative Layout 測試</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_image">Image 測試</string>
 
 </resources>

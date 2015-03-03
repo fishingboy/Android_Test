@@ -40,6 +40,10 @@
             android:name=".RelativeActivity"
             android:label="@string/title_activity_relative" >
         </activity>
+        <activity
+            android:name=".ImageActivity"
+            android:label="@string/title_activity_image" >
+        </activity>
     </application>
 
 </manifest>
