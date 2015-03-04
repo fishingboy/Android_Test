@@ -35,8 +35,9 @@ public class ListViewIconActivity extends ActionBarActivity
         for (int i=0; i<list.length; i++)
         {
             Map<String, Object> item = new HashMap<String, Object>();
-            item.put("imgView", android.R.drawable.ic_menu_add);
+            item.put("imgView", android.R.drawable.ic_input_get);
             item.put("txtView", list[i]);
+            item.put("imgView2", android.R.drawable.ic_btn_speak_now);
             mList.add(item);
         }
 
@@ -45,8 +46,8 @@ public class ListViewIconActivity extends ActionBarActivity
             this,
             mList,
             R.layout.list_item,
-            new String[] {"imgView", "txtView"},
-            new int[] {R.id.imgViewIcon, R.id.txtViewIcon}
+            new String[] {"imgView", "txtView", "imgView2"},
+            new int[] {R.id.imgViewIcon, R.id.txtViewIcon, R.id.imgViewIcon2}
         );
 
         listView = (ListView)findViewById(R.id.listView2);
