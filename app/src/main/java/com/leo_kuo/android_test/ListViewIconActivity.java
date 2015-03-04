@@ -37,7 +37,7 @@ public class ListViewIconActivity extends ActionBarActivity
             Map<String, Object> item = new HashMap<String, Object>();
             item.put("imgView", android.R.drawable.ic_input_get);
             item.put("txtView", list[i]);
-            item.put("imgView2", android.R.drawable.ic_btn_speak_now);
+            item.put("imgView2", R.drawable.record);
             mList.add(item);
         }
 
