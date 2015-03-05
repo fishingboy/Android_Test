@@ -113,7 +113,7 @@
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Fragment 測試"
+            android:text="Fragment 測試(靜態)"
             android:layout_gravity="center_horizontal"
             android:onClick="showFragment"/>
 

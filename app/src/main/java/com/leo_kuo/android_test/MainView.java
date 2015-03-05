@@ -131,10 +131,10 @@ public class MainView extends ActionBarActivity
     // 顯示 Table Layout 測試畫面
     public void showFragment(View view)
     {
-        Lib.alert(view, "功能尚未完成。");
-//        Intent intent = new Intent();
-//        intent.setClass(this, BlankFragment.class);
-//        startActivity(intent);
+//        Lib.alert(view, "功能尚未完成。");
+        Intent intent = new Intent();
+        intent.setClass(this, FragmentActivity.class);
+        startActivity(intent);
     }
 
     public void showImage(View view)
