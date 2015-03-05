@@ -9,14 +9,10 @@
                 tools:context="com.leo_kuo.android_test.ImageActivity"
                 android:orientation="vertical">
 
-
     <ImageButton
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/imageButton"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
         android:src="@drawable/notify_icon"/>
 
     <ImageView
