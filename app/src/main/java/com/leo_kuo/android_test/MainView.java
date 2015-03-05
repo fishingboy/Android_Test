@@ -157,4 +157,11 @@ public class MainView extends ActionBarActivity
         intent.setClass(this, ListViewIconActivity.class);
         startActivity(intent);
     }
+
+    public void showFrameBorder(View view)
+    {
+        Intent intent = new Intent();
+        intent.setClass(this, BorderActivity.class);
+        startActivity(intent);
+    }
 }

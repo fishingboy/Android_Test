@@ -26,5 +26,6 @@
 
     <string name="title_activity_list_view_icon">ListView 圖示測試</string>
     <string name="title_activity_fragment">FragmentActivity</string>
+    <string name="title_activity_border">BorderActivity</string>
 
 </resources>
